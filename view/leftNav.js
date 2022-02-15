@@ -43,7 +43,7 @@ export function leftNav() {
       childElms: [{
         type: 'img',
         elmAttrs: {
-          src: '../assets/profile.jpeg'
+          src: './assets/profile.jpeg'
         }
       }]
     }, {
