@@ -43,7 +43,7 @@ export function leftNav() {
       childElms: [{
         type: 'img',
         elmAttrs: {
-          src: './assets/profile.jpeg'
+          src: './assets/profile1.jpg'
         }
       }]
     }, {
@@ -97,4 +97,9 @@ function leftNavItemClick(e) {
   if (body.classList.value.indexOf('menu-active') > -1) {
     body.classList.remove('menu-active')
   }
+  const leftNavElm = document.getElementById('right-nav');
+  if (leftNavElm) {
+    leftNavElm.scrollTo(0,0);
+  }
+
 }

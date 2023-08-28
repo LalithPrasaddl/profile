@@ -1,3 +1,5 @@
+const exp = new Date().getFullYear() - 2012;
+
 export const siteData = {
   name: 'Lalith Prasad',
   location: 'Bangalore, India',
@@ -39,7 +41,7 @@ export const siteData = {
     link: 'mailto:lalithprasaddl@gmail.com'
   }],
   aboutItems: [{
-    title: 'Over 9 years',
+    title: ['Over', exp ,'years'].join(' '),
     subTitle: 'Experience',
     icon: 'date_range'
   }, {
@@ -154,9 +156,13 @@ export const siteData = {
     desc: 'An App where users can track and set reminder to track the amount of water they drink on a daily basis.',
     skills: ['React Native']
   }, {
-    client: 'Ding Health',
-    desc: 'Ding Health is your pocket health assistant that helps you track symptoms, identify concerns and find affordable care you deserve.',
+    client: 'Scissor Rock Paper',
+    desc: 'Rock Paper Scissors Showdown brings the classic game to your fingertips with a fresh new look and exciting gameplay. Prepare to engage in thrilling battles of mind games as you outsmart the system and rise to victory!',
     skills: ['React Native']
+  }, {
+    client: 'AI Movie Buddy',
+    desc: 'Experience the magic of cinema in a whole new way with AI Movie Buddy. Unleash your imagination as you engage in conversations with legendary movie characters, brought to life through advanced AI technology.',
+    skills: ['React Native', 'OpenAI', 'Firebase']
   }]
 }
 
