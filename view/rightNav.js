@@ -361,42 +361,65 @@ export function processProjectsData(projects) {
         }
       })
     }
+    let childElms = [{
+      type: 'div',
+      elmAttrs: {
+        className: 'project-title'
+      },
+      childElms: [{
+        type: 'div',
+        elmAttrs: {
+          innerHTML: j + 1
+        }
+      }, {
+        type: 'h4',
+        elmAttrs: {
+          innerHTML: project.duration ? [project.client, project.duration].join(', ') : project.client
+        }
+      }]
+    }, {
+      type: 'div',
+      elmAttrs: {
+        innerHTML: project.desc
+      }
+    }, {
+      type: 'ul',
+      childElms: responsibilitiesItems
+    }, {
+      type: 'div',
+      elmAttrs: {
+        className: 'project-skills-wrapper'
+      },
+      childElms: skillsItems
+    }]
+    if (project.links) {
+      const links = project.links
+      const linkItems = []
+      for (let m = 0; m < links.length; m++) {
+        const link = links[m]
+        linkItems.push({
+          type: 'a',
+          elmAttrs: {
+            className: 'project-link',
+            innerHTML: link.title,
+            href: link.link
+          }
+        })
+      }
+      childElms.push({
+        type: 'div',
+        elmAttrs: {
+          className: 'project-links-wrapper'
+        },
+        childElms: linkItems
+      })
+    }
     projectsData.push({
       type: 'div',
       elmAttrs: {
         className: 'project'
       },
-      childElms: [{
-        type: 'div',
-        elmAttrs: {
-          className: 'project-title'
-        },
-        childElms: [{
-          type: 'div',
-          elmAttrs: {
-            innerHTML: j + 1
-          }
-        }, {
-          type: 'h4',
-          elmAttrs: {
-            innerHTML: project.duration ? [project.client, project.duration].join(', ') : project.client
-          }
-        }]
-      }, {
-        type: 'div',
-        elmAttrs: {
-          innerHTML: project.desc
-        }
-      }, {
-        type: 'ul',
-        childElms: responsibilitiesItems
-      }, {
-        type: 'div',
-        elmAttrs: {
-          className: 'project-skills-wrapper'
-        },
-        childElms: skillsItems
-      }]
+      childElms
     })
   }
   return projectsData

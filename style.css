@@ -263,6 +263,9 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 14px;
 }
 
+/*Employment Tab END*/
+
+/* Projects Tab START */
 .project {
   max-width: 800px;
   padding-bottom: 24px;
@@ -305,7 +308,20 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 8px;
 }
 
-/* Projects Tab START */
+.project .project-links-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 8px;
+}
+
+.project .project-links-wrapper a {
+  padding: 6px 18px;
+  margin-left: 12px;
+  font-size: 14px;
+  color: rgb(69, 146, 251);
+  text-decoration: underline;
+}
+
 .projects-wrapper {
   padding: 0 16px;
   box-sizing: border-box;

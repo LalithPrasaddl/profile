@@ -90,6 +90,9 @@ function leftNavItemClick(e) {
   const body = document.body
   const key = e.currentTarget.dataset.key
   const data = {...appState}
+  if (key === data.currScreen) {
+    return;
+  }
   data.currScreen = key
   updateAppState(data)
   leftNav()
