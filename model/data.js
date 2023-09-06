@@ -172,18 +172,6 @@ export const siteData = {
     }]
   }],
   selfProjects: [{
-    client: 'Drink Water Tracker Reminder',
-    desc: 'An App where users can track and set reminder to track the amount of water they drink on a daily basis.',
-    skills: ['React Native']
-  }, {
-    client: 'Random Quotes',
-    desc: 'Exploring the wisdom of the ages, one random quote at a time.',
-    skills: ['JavaScript'],
-    links: [{
-      title: 'Home',
-      link: 'https://lalithprasaddl.github.io/quotes/'
-    }]
-  }, {
     client: 'Scissor Rock Paper',
     desc: 'Rock Paper Scissors Showdown brings the classic game to your fingertips with a fresh new look and exciting gameplay. Prepare to engage in thrilling battles of mind games as you outsmart the system and rise to victory!',
     skills: ['React Native'],
@@ -205,7 +193,23 @@ export const siteData = {
       title: 'Andriod',
       link: 'https://play.google.com/store/apps/details?id=com.lalithprasaddl.filmyavatarchat'
     }],
-  }]
+  }, {
+    client: 'Random Quotes',
+    desc: 'Exploring the wisdom of the ages, one random quote at a time.',
+    skills: ['JavaScript'],
+    links: [{
+      title: 'Quotes',
+      link: 'https://lalithprasaddl.github.io/quotes/'
+    }]
+  }, {
+    client: 'Krishna Quotes',
+    desc: 'Quotes related to the concept of dharma (duty/righteousness) as explained by Krishna',
+    skills: ['JavaScript'],
+    links: [{
+      title: 'Quotes',
+      link: 'https://lalithprasaddl.github.io/krishna-quotes/'
+    }]
+  }, ]
 }
 
 export let appState = {
