@@ -51,16 +51,16 @@ export const siteData = {
   }],
   professionalSkills: [{
     label: 'Javascript',
-    exp: '9 years'
+    exp: '10 years'
   }, {
     label: 'HTML & CSS3',
-    exp: '9 years'
+    exp: '10 years'
   }, {
     label: 'React JS',
-    exp: '5.5 years'
+    exp: '7 years'
   }, {
     label: 'Vue JS',
-    exp: '2 years'
+    exp: '3.5 years'
   }, {
     label: 'Angular JS',
     exp: '1.5 years'
@@ -69,7 +69,7 @@ export const siteData = {
     exp: '1 year'
   }, {
     label: 'React Native',
-    exp: '1.5 years'
+    exp: '4.5 years'
   }],
   languages: [{
     label: 'English',
@@ -193,23 +193,7 @@ export const siteData = {
       title: 'Andriod',
       link: 'https://play.google.com/store/apps/details?id=com.lalithprasaddl.filmyavatarchat'
     }],
-  }, {
-    client: 'Random Quotes',
-    desc: 'Exploring the wisdom of the ages, one random quote at a time.',
-    skills: ['JavaScript'],
-    links: [{
-      title: 'Quotes',
-      link: 'https://lalithprasaddl.github.io/quotes/'
-    }]
-  }, {
-    client: 'Krishna Quotes',
-    desc: 'Quotes related to the concept of dharma (duty/righteousness) as explained by Krishna',
-    skills: ['JavaScript'],
-    links: [{
-      title: 'Quotes',
-      link: 'https://lalithprasaddl.github.io/krishna-quotes/'
-    }]
-  }, ]
+  }]
 }
 
 export let appState = {
